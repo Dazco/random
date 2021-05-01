@@ -1,5 +1,5 @@
 @use 'header';
 @use 'sidebar';
-@use 'main';
+@use 'article';
 @use 'footer';
 /*# sourceMappingURL=index.css.map */
