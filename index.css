@@ -26,10 +26,12 @@ header {
 .header__img--logo {
   margin-right: 30px;
 }
-.header__svg{
+
+.header__svg {
   width: 61px;
   height: 24px;
 }
+
 .header__input--search {
   width: 100%;
   height: 28px;
@@ -52,6 +54,16 @@ header {
 @media screen and (max-width: 995px) {
   .hamburger {
     display: block;
+  }
+}
+@media screen and (max-width: 437px) {
+  .header__input--search {
+    width: 62px;
+  }
+
+  .header__svg {
+    width: unset;
+    height: unset;
   }
 }
 main {
@@ -79,12 +91,12 @@ aside {
 
 article {
   height: 100%;
-  width: 100%;
-  border: 1px solid #EEEEEE;
+  max-width: 728px;
+  border: 1px solid #eeeeee;
 }
 
 .article__section--info {
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
   padding: 16px;
   width: 100%;
 }
@@ -109,18 +121,121 @@ article {
 .article__section--banner .author span {
   display: inline-block;
 }
-.article__section--banner .info {
+.article__section--banner .article__info {
   display: flex;
   align-items: center;
   vertical-align: middle;
   margin-top: 8px;
 }
-.article__section--banner .info span {
+.article__section--banner .article__info span {
   display: inline-block;
   margin-right: 8px;
   color: #737373;
-  font-weight: 400;
   vertical-align: middle;
+}
+.article__section--banner .article__info .views {
+  margin-right: 0;
+  margin-left: auto;
+  font-weight: 500;
+}
+
+.article__img--banner {
+  max-width: 100%;
+  margin: 16px 0;
+}
+
+.article__summary {
+  font-size: 16px;
+}
+
+.article__contributions {
+  font-size: 14px;
+  color: #212121;
+}
+.article__contributions span:first-child {
+  color: #737373;
+}
+.article__contributions span,
+.article__contributions span > img {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.article__published span {
+  font-size: 10px;
+  color: #737373;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.article__section--apps .app_info {
+  display: flex;
+  columns: 2;
+  column-gap: 13px;
+  padding: 22px 13px;
+  background-color: #F7F7F7;
+}
+.article__section--apps .app_info > div:first-child {
+  width: 86px;
+}
+.article__section--apps .app_info > div:first-child img {
+  max-width: 100%;
+}
+.article__section--apps .app_info > div:last-child {
+  width: auto;
+}
+.article__section--apps .app_info > div:last-child h2 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+.article__section--apps .app_info > div:last-child p {
+  padding: 0;
+  margin-bottom: 8px;
+}
+.article__section--apps .app_info > div:last-child .app_company {
+  font-size: 16px;
+  font-weight: 500;
+  color: #737373;
+}
+.article__section--apps .app_info > div:last-child .app_ratings {
+  margin-top: 0;
+}
+.article__section--apps .app_info > div:last-child .app_ratings span:not(:first-child) {
+  color: #737373;
+}
+.article__section--apps .app_info > div:last-child .app_ratings span {
+  display: inline-block;
+  margin-right: 8px;
+}
+.article__section--apps .app_info > div:last-child .app_published {
+  color: #737373;
+  font-size: 12px;
+}
+.article__section--apps .app_info > div:last-child .app_tag {
+  padding: 2px 8px;
+  margin-right: 8px;
+  border-radius: 2px;
+  font-size: 12px;
+}
+.article__section--apps .app_info > div:last-child .app_tag--success {
+  background-color: #e7f6ef;
+}
+.article__section--apps .app_info > div:last-child .app_tag--warning {
+  background-color: rgba(255, 96, 64, 0.12);
+}
+.article__section--apps .app_info > div:last-child .app_tag--mute {
+  background-color: rgba(102, 102, 102, 0.12);
+}
+.article__section--apps .app_info button {
+  background-color: #3981E5;
+  color: #ffffff;
+  vertical-align: middle;
+  outline: 0;
+  border: 0;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 9px 12px;
 }
 
 footer {
@@ -164,7 +279,7 @@ footer {
   margin-bottom: 16px;
 }
 
-@media screen and (max-width: 995px){
+@media screen and (max-width: 995px) {
   .footer__categories {
     display: block;
   }
@@ -179,14 +294,8 @@ footer {
     max-height: 600px;
   }
 }
-@media screen and (max-width: 437px){
-  .header__input--search{
-    width: 62px;
-  }
-  .header__svg{
-    width: unset;
-    height: unset;
-  }
+body {
+  color: #212121;
 }
 
 /*# sourceMappingURL=index.css.map */
