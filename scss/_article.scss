@@ -33,6 +33,22 @@ article{
     
         }
     }
+
+    .info{
+        display: flex;
+        align-items: center;
+        vertical-align: middle;
+        margin-top: 8px;
+        span{
+            display: inline-block;
+            margin-right: 8px;
+            color: #737373;
+            font-weight: 400;
+            vertical-align: middle;
+
+        }
+        
+    }
 }
 
 

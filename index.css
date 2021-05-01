@@ -106,6 +106,19 @@ article {
 .article__section--banner .author span {
   display: inline-block;
 }
+.article__section--banner .info {
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  margin-top: 8px;
+}
+.article__section--banner .info span {
+  display: inline-block;
+  margin-right: 8px;
+  color: #737373;
+  font-weight: 400;
+  vertical-align: middle;
+}
 
 footer {
   color: #ffffff;
