@@ -80,6 +80,15 @@ footer {
   .footer__categories {
     display: block;
   }
-}
+  .footer__category ul.footer__category--games{
+    max-height: 370px;
+  }
+  .footer__category ul.footer__category--life {
+    max-height: 320px;
+  }
+  .footer__category ul.footer__category--apps {
+    max-height: 600px;
+  }
+} 
 
 /*# sourceMappingURL=index.css.map */
