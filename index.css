@@ -8,12 +8,23 @@ header {
   padding-right: 16px;
 }
 
+.hamburger {
+  display: none;
+  margin-right: 16px;
+}
+
 .header__div {
   margin-right: 0;
   margin-left: auto;
+  display: flex;
+  align-items: center;
 }
 .header__div .header__item:not(:first-child) {
   margin-left: 16px;
+}
+
+.header__img--logo {
+  margin-right: 30px;
 }
 
 .header__input--search {
@@ -35,6 +46,11 @@ header {
   text-transform: capitalize;
 }
 
+@media screen and (max-width: 995px) {
+  .hamburger {
+    display: block;
+  }
+}
 main {
   display: flex;
   columns: 2;
