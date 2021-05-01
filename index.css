@@ -35,11 +35,18 @@ header {
   text-transform: capitalize;
 }
 
+main {
+  display: flex;
+  columns: 2;
+  column-gap: 16px;
+  padding: 0 14.2361111111%;
+}
+
 aside {
   height: 100%;
   padding: 13px 0;
-  border-right: 1px solid #EEEEEE;
-  max-width: 247px;
+  border: 1px solid #EEEEEE;
+  width: 247px;
 }
 
 .aside__nav_item {
@@ -53,7 +60,35 @@ aside {
 
 article {
   height: 100%;
-  border-left: 1px solid #EEEEEE;
+  width: 100%;
+  border: 1px solid #EEEEEE;
+}
+
+.article__section--info {
+  background-color: #F9F9F9;
+  padding: 16px;
+  width: 100%;
+}
+.article__section--info h2 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.article__section--banner {
+  padding: 24px 16px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.article__section--banner h1 {
+  font-size: 22px;
+  font-weight: 700;
+}
+.article__section--banner .author img {
+  margin-right: 8px;
+}
+.article__section--banner .author span {
+  display: inline-block;
 }
 
 footer {
@@ -101,7 +136,8 @@ footer {
   .footer__categories {
     display: block;
   }
-  .footer__category ul.footer__category--games{
+
+  .footer__category ul.footer__category--games {
     max-height: 370px;
   }
   .footer__category ul.footer__category--life {
@@ -110,6 +146,6 @@ footer {
   .footer__category ul.footer__category--apps {
     max-height: 600px;
   }
-} 
+}
 
 /*# sourceMappingURL=index.css.map */

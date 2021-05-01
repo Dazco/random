@@ -1,4 +1,38 @@
 article{
     height: 100%;
-    border-left: 1px solid #EEEEEE;
+    width: 100%;
+    border: 1px solid #EEEEEE;
 }
+.article__section--info{
+    background-color: #F9F9F9;
+    padding: 16px;
+    width: 100%;
+
+    h2{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+    }
+}
+
+.article__section--banner{
+    padding: 24px 16px;
+    font-size: 14px;
+    font-weight: 400;
+    h1{
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .author{
+        img{
+            margin-right: 8px;
+        }
+        span{
+            display: inline-block;
+    
+        }
+    }
+}
+
+
