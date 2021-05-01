@@ -1,0 +1,42 @@
+@use 'variables';
+$-height: 50px;
+$-hor-pad: 16px;
+
+header {
+  background-color: variables.$primary-blue;
+  width: 100%;
+  height: $-height;
+  display: flex;
+  align-items: center;
+  padding-left: $-hor-pad;
+  padding-right: $-hor-pad;
+}
+
+.header__div{
+  margin-right: 0;
+  margin-left: auto;
+
+  .header__item:not(:first-child){
+    margin-left: $-hor-pad;
+  }
+}
+
+.header__input--search{
+  width: auto;
+  height: 28px;
+  font-size: 14px;
+  background-color: transparent;
+  padding-left: $-hor-pad;
+  padding-right: $-hor-pad;
+  border-radius: 14px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  outline: 0;
+
+  &::placeholder{
+    font-size: 14px;
+    color: #ffffff;
+    opacity: 1;
+    text-transform: capitalize;
+  }
+}
