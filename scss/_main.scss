@@ -2,5 +2,5 @@ main{
     display: flex;
     columns: 2;
     column-gap: 16px;
-    padding:0 205/1440 * 100%;
+    align-items: stretch;
 }

@@ -1,9 +1,8 @@
 @use 'variables';
-$max-width: 728px;
 
 article {
   height: 100%;
-  max-width: $max-width;
+  width: 100%;
   border: 1px solid #eeeeee;
 }
 .article__section--info {
@@ -170,9 +169,7 @@ article {
     }
   }
 }
-.app_comments{
 
-}
 .app_comment{
   padding: 16px;
 }

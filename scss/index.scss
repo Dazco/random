@@ -4,6 +4,21 @@
 @use 'article';
 @use 'footer';
 
-body{
-    color: #212121;
+body {
+  color: #212121;
+  width: 100%;
+}
+
+a{
+    text-decoration: underline;
+}
+
+.body_container {
+  padding: 0 300/1440 * 100%;
+}
+
+@media screen and (max-width: 556px){
+ .body_container{
+     padding: 0;
+ }
 }
